@@ -1,18 +1,12 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # dualknockin
 
 Model of CRISPR-induced dual knock-in
 
 ## Results
 
--   A theoretical plot<br />
+-   Theoretical plot<br />
 <img src="results/prediction.png" alt="analytic result" width="450"/>
--   A result of probabilistic simulation<br />
+-   Probabilistic simulation<br />
 <img src="results/simulation.png" alt="simulation result" width="450"/>
 
 ## Reference
