@@ -55,13 +55,14 @@ for (i in 1:Len) {
 }
 
 # Plot
-plot(p.seq, res[, 1], type = "o", xlab = expression(italic("P")), ylab = "(%)", lwd = 2)
+plot(p.seq, res[, 1], type = "o", xlab = expression(italic("p")), ylab = "(%)", lwd = 2)
 lines(p.seq, res[, 2], type = "o", col = "green", lwd = 2)
 lines(p.seq, res[, 2] + res[, 4], type = "l", lty = 3, col = "green", lwd = 2)
 lines(p.seq, res[, 3], type = "o", col = "red", lwd = 2)
 lines(p.seq, res[, 3] + res[, 4], type = "l", lty = 3, col = "red", lwd = 2)
 lines(p.seq, res[, 4], type = "o", col = "orange", lwd = 2)
 abline(h = seq(0, 100, 10), lwd = 0.5)
-legend(0.3, 100, c("None", "Green (single)", "Green (total)", "Red (single)", "Red (total)", "Yellow"),
-  col = c("black", "green", "green", "red", "red", "yellow"), lty = c(1, 1, 3, 1, 3, 1), cex = 0.6, lwd = 2
+legend("topright", c("None", "Green (single)", "Green (total)", "Red (single)", "Red (total)", "Yellow"),
+  col = c("black", "green", "green", "red", "red", "yellow"), lty = c(1, 1, 3, 1, 3, 1), ncol=2, cex = 0.75, lwd = 2
 )
+box(lwd = 2)
